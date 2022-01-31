@@ -8,7 +8,7 @@ class Calculator extends CI_Controller
 	public function __construct()
 	{
 		parent::__construct();
-		$this->load->model('Food_model', 'food');
+		$this->load->model('data_model', 'data');
 	}
 	
 

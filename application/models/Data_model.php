@@ -3,7 +3,7 @@
 
 defined('BASEPATH') or exit('No direct script access allowed');
 
-class Food_model extends CI_Model
+class Data_model extends CI_Model
 {
 	public function data() {
 		$data = [
@@ -1007,5 +1007,34 @@ class Food_model extends CI_Model
 		
 	}
 
+
+	public function blood() {
+		$data = [
+			[
+				"type" => "A",
+				"note" => "golongan darah A ini seharusnya banyak mengkonsumsi bahan-bahan makanan yang mengandung unsure karbohidrat tinggi dan juga harus mengkonsumsi makanan atau minuman yang rendah terhadap unsure lemak",
+				"image" => "a.jpg"
+			],
+			[
+				"type" => "B",
+				"note" => "Orang yang memiliki golongan darah B ini umumnya harus menghindari makanan atau minuman yang berbahan susu kemudian juga menghindari makanan yang berbahan dasar bebek, daging ayam, dan daging sapi.",
+				"image" => "b.jpg"
+			],
+			[
+				"type" => "AB",
+				"note" => "Orang yang memiliki golongan darah AB memiliki keberuntungan karena bias beradaptasi dengan semua makanan sehat yang dikonsumsi dan hanya menyesuaikan dengan berbagai jenis makanan.",
+				"image" => "ab.jpg"
+			],
+			[
+				"type" => "O",
+				"note" => "Untuk orang yang memiliki golongan darah O disarankan untuk mengkonsumsi makanan atau minuman yang kadar karbohidratnya rendah dan mengkonsumsi makanan atau minuman yang kadar proteinnya tinggi",
+				"image" => "o.jpg"
+			],
+		];
+		
+		return $data;
+
+	}
+	
 }
 ?>

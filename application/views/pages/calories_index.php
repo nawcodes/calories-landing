@@ -9,7 +9,7 @@
 					<thead>
 						<tr>
 							<th>Nama</th>
-							<th>Berat</th>
+							<th>Berat (gr)</th>
 							<th>Kalori</th>
 							<th>Unit</th>
 						</tr>
@@ -27,7 +27,7 @@
 					<tfoot>
 						<tr>
 							<th>Nama</th>
-							<th>Berat</th>
+							<th>Berat (gr)</th>
 							<th>Kalori</th>
 							<th>Unit</th>
 						</tr>

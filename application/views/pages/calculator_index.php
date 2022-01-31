@@ -14,20 +14,20 @@
 						</select>
 					</div>
 					<div class="mb-3">
-						<label for="" class="form-label">Umur</label>
+						<label for="" class="form-label">Umur (contoh: 17) <span class="text-danger">*</span></label>
 						<input type="number" class="form-control" id="umur" min="0" name="umur" required="" step="any" type="number" value="0">
 					</div>
 					<div class="mb-3">
-						<label for="" class="form-label">Tinggi</label>
+						<label for="" class="form-label">Tinggi (contoh: 150) <span class="text-danger">*</span></label>
 						<input type="number" class="form-control" id="tinggi" min="0" name="tinggi" required="" step="any" value="0">
 					</div>
 					<div class="mb-3">
-						<label for="" class="form-label">Berat</label>
+						<label for="" class="form-label">Berat (contoh: 63)kg <span class="text-danger">*</span></label>
 						<input id="berat" min="0" name="berat" required="" step="any" type="number" value="0" class="form-control" id="exampleInputPassword1">
 					</div>
 
 					<div id="" class="form-group">
-						<label>Pilih tingkat aktivitas anda:</label>
+						<label>Pilih tingkat aktivitas anda: <span class="text-danger">*</span></label>
 						<div class="radio">
 							<label>
 								<input name="tingkatAktivitas" id="tingkatAktivitas" type="radio" value="1.2" type="radio"> Saya hanya duduk duduk dan sedikit bergerak
@@ -50,7 +50,7 @@
 						</div>
 						<div class="radio">
 							<label>
-								<input name="tingkatAktivitas" id="tingkatAktivitas"  type="radio" value="2"> Saya melakukan aktivitas berat (melakukan gerak badan atau olahraga berat dan pekerjaan fisik) training)
+								<input name="tingkatAktivitas" id="tingkatAktivitas" type="radio" value="2"> Saya melakukan aktivitas berat (melakukan gerak badan atau olahraga berat dan pekerjaan fisik) training)
 							</label>
 						</div>
 					</div>

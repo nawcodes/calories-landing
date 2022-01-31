@@ -8,13 +8,19 @@ class Data extends CI_Controller {
 	public function __construct()
 	{
 		parent::__construct();
-		$this->load->model('Food_model', 'food');
+		$this->load->model('data_model', 'data');
 	}
 	
 
 	public function index()
 	{
-		$model = $this->food->data();
+		$model = $this->data->data();
+		echo $model;
+	}
+
+
+	public function blood() {
+		$model = $this->data->blood();
 		echo $model;
 	}
 
