@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
+
+* {
+    font-family: 'Poppins',sans-serif;
+}
+
+.dashboard-main {
+	background-image: url('../img/banner/slide.jpg');
+	border: 1px solid white;
+	border-radius:3px;
+	width: 100%;
+	height: 500px;
+}
+
+
+
+.content-main h1 {
+	color: rgb(235, 212, 212);
+	letter-spacing: .15em;
+	text-shadow: 5px 2px 5px 8px rgba(0, 0, 0, 0.9);
+	font-weight: bold;
+}
+
+
+.content-main p {
+	text-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
