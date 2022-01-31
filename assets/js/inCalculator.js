@@ -11,14 +11,6 @@ const tingkatAktivitas = document.getElementsByName('tingkatAktivitas');
 const   resultEl = document.getElementById('result');
 
 
-async function getData() {
-		const resp = await fetch(BASE_URL + 'data');
-		const respData = await resp.json();
-		console.log(respData);
-}
-
-getData();
-
 
 formEl.addEventListener('submit', (e) => {
 	resultEl.innerHTML = ``;
