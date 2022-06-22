@@ -1008,26 +1008,72 @@ class Data_model extends CI_Model
 	}
 
 
-	public function blood() {
+	public function getWhereBlood($params) {
 		$data = [
 			[
 				"type" => "A",
-				"note" => "golongan darah A ini seharusnya banyak mengkonsumsi bahan-bahan makanan yang mengandung unsure karbohidrat tinggi dan juga harus mengkonsumsi makanan atau minuman yang rendah terhadap unsure lemak",
+				"note" => "Pola makan golongan darah A bebas daging, misalnya vegetarian atau flexitarian (semi vegetarian). Makan utama yang disarankan makanan laut, ikan, sayur, buah-buahan, tahu, tempe, kacang, dan biji-bijian.",
 				"image" => "a.jpg"
 			],
 			[
 				"type" => "B",
-				"note" => "Orang yang memiliki golongan darah B ini umumnya harus menghindari makanan atau minuman yang berbahan susu kemudian juga menghindari makanan yang berbahan dasar bebek, daging ayam, dan daging sapi.",
+				"note" => "Pola makan terbaik menurut golongan darah B  adalah sayur hijau, telur, daging, dan produk olahan susu rendah lemak. Sementara itu orang yang memiliki golongan darah B di anjurkan untuk membatasi konsumsi ayam, jagung, tomat dan gandum.",
 				"image" => "b.jpg"
 			],
 			[
 				"type" => "AB",
-				"note" => "Orang yang memiliki golongan darah AB memiliki keberuntungan karena bias beradaptasi dengan semua makanan sehat yang dikonsumsi dan hanya menyesuaikan dengan berbagai jenis makanan.",
+				"note" => "Pola makan untuk golongan darah AB merupakan gabungan antara beberapa jenis makanan untuk golongan darah A dan B . orang yang memiliki golongan darah ab disarankan mengkonsumsi lebih banyak makanan laut, tahu, tempe, yoghurt, keju, susu, sayuran hijau, kacang-kacangan, dan biji-bijian",
 				"image" => "ab.jpg"
 			],
 			[
 				"type" => "O",
-				"note" => "Untuk orang yang memiliki golongan darah O disarankan untuk mengkonsumsi makanan atau minuman yang kadar karbohidratnya rendah dan mengkonsumsi makanan atau minuman yang kadar proteinnya tinggi",
+				"note" => "Pola makan sehat berdasarkan golongan darah adalah buah-buahan yang bersifat alkali seperti alpukat, apel, kurma, bawang putih, wortel, seledri, serta daging sapi, domba. Kalkun, ayam, telur, kacang-kacangan, dan biji-bijian, dan seafood. Karna dapat meningkatkan produksi  hormon.",
+				"image" => "o.jpg"
+			],
+		];
+
+
+		$result = [];
+
+		foreach($data as $key => $value ) {
+			
+			if($value['type'] == $params) {
+				$result[] = $value;
+			}
+
+		}
+
+		
+		return [
+			'type' => $result[0]['type'],
+			'note' => $result[0]['note'],
+			'image' => $result[0]['image']
+		];
+
+
+	}
+
+
+	public function blood() {
+		$data = [
+			[
+				"type" => "A",
+				"note" => "Pola makan golongan darah A bebas daging, misalnya vegetarian atau flexitarian (semi vegetarian). Makan utama yang disarankan makanan laut, ikan, sayur, buah-buahan, tahu, tempe, kacang, dan biji-bijian.",
+				"image" => "a.jpg"
+			],
+			[
+				"type" => "B",
+				"note" => "Pola makan terbaik menurut golongan darah B  adalah sayur hijau, telur, daging, dan produk olahan susu rendah lemak. Sementara itu orang yang memiliki golongan darah B di anjurkan untuk membatasi konsumsi ayam, jagung, tomat dan gandum.",
+				"image" => "b.jpg"
+			],
+			[
+				"type" => "AB",
+				"note" => "Pola makan untuk golongan darah AB merupakan gabungan antara beberapa jenis makanan untuk golongan darah A dan B . orang yang memiliki golongan darah ab disarankan mengkonsumsi lebih banyak makanan laut, tahu, tempe, yoghurt, keju, susu, sayuran hijau, kacang-kacangan, dan biji-bijian",
+				"image" => "ab.jpg"
+			],
+			[
+				"type" => "O",
+				"note" => "Pola makan sehat berdasarkan golongan darah adalah buah-buahan yang bersifat alkali seperti alpukat, apel, kurma, bawang putih, wortel, seledri, serta daging sapi, domba. Kalkun, ayam, telur, kacang-kacangan, dan biji-bijian, dan seafood. Karna dapat meningkatkan produksi  hormon.",
 				"image" => "o.jpg"
 			],
 		];

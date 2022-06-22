@@ -8,9 +8,7 @@ const tinggi = document.getElementById('tinggi');
 const berat = document.getElementById('berat');
 const formEl = document.getElementById('form');
 const tingkatAktivitas = document.getElementsByName('tingkatAktivitas');
-const   resultEl = document.getElementById('result');
-
-
+const resultEl = document.getElementById('result');
 
 formEl.addEventListener('submit', (e) => {
 	resultEl.innerHTML = ``;
@@ -21,7 +19,6 @@ formEl.addEventListener('submit', (e) => {
 	let tinggiValue = tinggi.value;
 	let beratValue = berat.value;
 	let tingkatAktivitasValue = 0;
-
 
 	for (let i = 0; i < tingkatAktivitas.length; i++) {
 		if(tingkatAktivitas[i].checked) {
@@ -36,9 +33,6 @@ formEl.addEventListener('submit', (e) => {
 	}
 	
 	const result = bmr * parseFloat(tingkatAktivitasValue);
-
-
-	
 
 	const resultChild = document.createElement('ul');
 	resultChild.className = 'list-group list-group-flush mb-3 border border-primary';
