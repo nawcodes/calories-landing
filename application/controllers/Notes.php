@@ -19,15 +19,6 @@ class Notes extends CI_Controller
 		$this->load->view('templates/_footer');
 	}
 
-
-	public function blood() {
-		$data['title'] = 'Tipe Golongan Darah';
-		$data['blood'] = $this->data->blood();
-		// $data['script'] = 'inBlood.js';
-		$this->load->view('templates/_header', $data);
-		$this->load->view('pages/blood_index');
-		$this->load->view('templates/_footer', $data);
-	}
 	
 
 }

@@ -4,7 +4,7 @@
 			<div class="card mb-3">
 				<div class="row g-0">
 					<div class="col-md-4">
-						<img src="/assets/img/logo/<?= $this->session->userdata('result_calc')['gol_darah_image'] ?>" class="img-fluid rounded-start">
+						<img src="/assets/img/logo/<?= $this->session->userdata('result_calc')['gol_darah_image'] ?>" class="img-fluid rounded-start" width="500">
 					</div>
 					<div class="col-md-8">
 						<div class="card-body">
