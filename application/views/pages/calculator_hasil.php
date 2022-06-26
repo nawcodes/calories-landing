@@ -18,12 +18,13 @@
 								<li class="list-group-item">Kebutuhan Kalori:<strong> <?= $this->session->userdata('result_calc')['kalori'] ?> Kal </strong></li>
 							</ul>
 						</div>
-						<div class="card-footer">
-							<a href="" type="button" class="btn btn-sm btn-block btn-success">Temukan makanan sesuai kalori mu</a>
+						<div class="card-footer"> 
+							<a href="<?= base_url('notes')?>" type="button" class="btn btn-sm btn-block btn-success">Temukan makanan sesuai kalori mu</a>
 						</div>
 					</div>
 				</div>
 			</div>
+			<a href="<?= base_url('calculator')?>?" class="btn btn-primary mb-5">Kembali</a>
 		</div>
 	</div>
 </div>

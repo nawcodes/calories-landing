@@ -13,7 +13,7 @@ class Notes extends CI_Controller
 	public function index() {
 		$data['title'] = 'Daftar Kalori Makanan';
 		$data['food'] = $this->data->data();
-		// $data['script'] = 'inNotes.js';
+		$data['script'] = 'inNotes.js';
 		$this->load->view('templates/_header', $data);
 		$this->load->view('pages/calories_index');
 		$this->load->view('templates/_footer');
